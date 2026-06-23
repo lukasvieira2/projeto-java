@@ -1,8 +1,10 @@
+package Revisao;
+
 import java.lang.Math;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class condicional {
+public class Condicional {
     public static void main(String[] args) {
 
         Scanner leia = new Scanner(System.in);
@@ -14,8 +16,7 @@ public class condicional {
         System.out.println("Digite um peso: ");
         double peso = leia.nextDouble();
 
-        /*System.out.printf("O peso %.2f e a altura é %.2f", peso,altura                           );
-*/
+        /*System.out.printf("O peso %.2f e a altura é %.2f", peso,);*/
         double imc = peso / Math.pow(altura,2);
 
         if (imc < 18.5){
