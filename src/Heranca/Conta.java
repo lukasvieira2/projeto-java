@@ -8,7 +8,7 @@ public class Conta {
     private double saldo;
     private boolean isAtiva;
 
-    public Conta(int agencia, boolean isAtiva, double saldo, String titularConta, int numeroConta) {
+    public Conta(int agencia, double saldo, String titularConta, int numeroConta, boolean isAtiva) {
         this.agencia = agencia;
         this.isAtiva = isAtiva;
         this.saldo = saldo;
@@ -49,8 +49,8 @@ public class Conta {
     }
 
     public void sacar(double valor){
-        if(valor >= saldo){
-            this.saldo = valor;
+        if(valor <= saldo){
+            this.saldo -= valor;
         }else {
             System.out.printf("saldo insuficiente. O seu saldo atual é de: %.2f", this.saldo);
         }

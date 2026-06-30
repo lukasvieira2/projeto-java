@@ -1,8 +1,8 @@
 package Heranca;
 
 public class contaPoupanca extends Conta{
-    public contaPoupanca(int agencia, boolean isAtiva, double saldo, String titularConta, int numeroConta) {
-        super(agencia, isAtiva, saldo, titularConta, numeroConta);
+    public contaPoupanca(int agencia, double saldo, String titularConta, int numeroConta, boolean isAtiva) {
+        super(agencia, saldo, titularConta, numeroConta, isAtiva);
     }
     @Override
     public void depositar(double valor){
