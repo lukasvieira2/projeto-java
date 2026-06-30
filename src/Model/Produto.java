@@ -7,11 +7,14 @@ public class Produto {
     private int quantidadeEstoque;
     private String tamanho;
 
+public Produto(){}
+
 public Produto(String nome, double preco, int quantidadeEstoque, String tamanho){
     this.nome = nome;
     this.preco = preco;
     this.quantidadeEstoque = quantidadeEstoque;
     this.tamanho = tamanho;
+    Caneta caneta = new Caneta();
 }
     //Métodos
 
